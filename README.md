@@ -3,7 +3,6 @@
 ## Install
 
 The latest codes are tested on Windows 10,  CUDA11.3,  PyTorch 1.11.0 and Python 3.9:
-
 ```shell
 conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 ```
@@ -65,9 +64,9 @@ python test.py --checkpoint checkpoints/best_checkpoints ## Test result: 93.5% O
 
 ## Performance
 
-|  Model   |   Inputs    | Over All Accuracy (%) | Mean Accuracy (%) | Vote |
-| :------: | :---------: | :-------------------: | :---------------: | :--: |
-| PointCAT | 1024 points |         93.5%         |       90.9%       |  ×   |
+| Model | Inputs | Over All Accuracy (%) | Mean Accuracy (%) | Vote |
+|:-:|:-:|:-:|:-:|:-:|
+| PointCAT | 1024 points |         93.5%         | 90.9% | × |
 
 ## Part Segmentation (ShapeNet)
 
@@ -87,12 +86,11 @@ python train.py --exp_name "your_exp_name" --lr 0.003 --batch_size 16 --epochs 2
 # Test
 python train.py --exp_name "your_exp_name" --eval
 ```
-
 ## Performance
 
-| Cls. mIoU | Inst. mIoU |    aero    |      bag      |   cap   |    car     |   chair    |    earphone    |  guitar   |
-| :-------: | :--------: | :--------: | :-----------: | :-----: | :--------: | :--------: | :------------: | :-------: |
-|   84.4    |    86.0    |    83.0    |     83.8      |  90.1   |    79.8    |    90.2    |      83.4      |   91.8    |
+| Cls. mIoU | Inst. mIoU |    aero    | bag | cap | car | chair | earphone | guitar |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|84.4	|86.0|83.0	|83.8	|90.1	|79.8	|90.2	|83.4	|91.8	|
 | **knife** |  **lamp**  | **laptop** | **motorbike** | **mug** | **pistol** | **rocket** | **skateboard** | **table** |
 |   87.8    |    82.5    |    95.9    |     76.1      |  95.4   |    84.9    |    68.5    |      83.1      |   84.3    |
 
@@ -117,14 +115,11 @@ python vis.py  #
 ## Semantic Segmentation (S3DIS)
 
 ### Data Preparation
-
 Download 3D indoor parsing dataset (**S3DIS**) [here](http://buildingparser.stanford.edu/dataset.html)  and save in `data/s3dis/Stanford3dDataset_v1.2_Aligned_Version/`.
-
 ```
 cd data_utils
 python collect_indoor3d_data.py
 ```
-
 Processed data will save in `data/stanford_indoor3d/`. The data structure be like:
 
 ```
@@ -150,7 +145,6 @@ python train.py --learning_rate 0.001 --optimizer AdamW  --test_area 5
 # Test
 python test_semseg.py --log_dir your_expriment_root --visiual --test_area 5
 ```
-
 ## Visualization
 
 Visualization results will save in `log/sem_seg/your_expriment_root/visual/` and you can transform these .obj files to .txt by these command:
@@ -178,9 +172,7 @@ python input_vis.py
 
 
 ## Citation
-
 If you find this repo useful in your research, please consider citing it and our other works:
-
 ```
 @article{Pytorch_Pointnet_Pointnet2,
       Author = {Xu Yan},
@@ -189,7 +181,5 @@ If you find this repo useful in your research, please consider citing it and our
       Year = {2019}
 }
 ```
-
 ## Selected Projects using This Codebase
-
 [PCT: Point Cloud Transformer](https://github.com/MenghaoGuo/PCT)
