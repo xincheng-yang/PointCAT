@@ -179,4 +179,4 @@ if __name__ == '__main__':
 
         printf(
             f"Testing loss:{test_loss} acc_avg:{test_acc_avg}% "
-            f"acc:{test_acc}% time:{time_cost}s [best test acc: {test_loss}%] \n\n")
+            f"acc:{test_acc}% time:{time_cost}s \n\n")
