@@ -33,7 +33,7 @@ tqdm==4.64.0
 
 ## PointCAT architecture for Shape Classification
 
-![](G:\PointCAT\README.assets\1.png)
+![](material\1.png)
 
 ## Classification (ModelNet40)
 
