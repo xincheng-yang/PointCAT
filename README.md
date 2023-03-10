@@ -3,6 +3,7 @@
 ## Install
 
 The latest codes are tested on Windows 10,  CUDA11.3,  PyTorch 1.11.0 and Python 3.9:
+
 ```shell
 conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 ```
@@ -13,10 +14,10 @@ pointnet2_ops_lib:
 pip install pointnet2_ops_lib/.
 ```
 
-## Requirements
+## Requirement
 
 ```
-einops==0.6.0
+![1](G:/PointCAT/images/1.jpg)![1](G:/PointCAT/images/1.png)einops==0.6.0
 h5py==3.6.0
 matplotlib==3.5.2
 numpy==1.21.5
@@ -24,16 +25,16 @@ open3d==0.15.1
 pandas==1.4.2
 pointnet2_ops==3.0.0
 pyntcloud==0.3.1
-scikit_learn==1.2.2
+![1](G:/PointCAT/images/1.png)scikit_learn==1.2.2
 scipy==1.8.0
 thop==0.1.1.post2209072238
 timm==0.6.7
 tqdm==4.64.0
 ```
 
-## PointCAT architecture for Shape Classification
+##  architecture for Shape Classification
 
-![](material\1.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110116545.jpg)
 
 ## Classification (ModelNet40)
 
@@ -64,9 +65,9 @@ python test.py --checkpoint checkpoints/best_checkpoints ## Test result: 93.5% O
 
 ## Performance
 
-| Model | Inputs | Over All Accuracy (%) | Mean Accuracy (%) | Vote |
-|:-:|:-:|:-:|:-:|:-:|
-| PointCAT | 1024 points |         93.5%         | 90.9% | × |
+|  Model   |   Inputs    | Over All Accuracy (%) | Mean Accuracy (%) | Vote |
+| :------: | :---------: | :-------------------: | :---------------: | :--: |
+| PointCAT | 1024 points |         93.5%         |       90.9%       |  ×   |
 
 ## Part Segmentation (ShapeNet)
 
@@ -86,11 +87,12 @@ python train.py --exp_name "your_exp_name" --lr 0.003 --batch_size 16 --epochs 2
 # Test
 python train.py --exp_name "your_exp_name" --eval
 ```
+
 ## Performance
 
-| Cls. mIoU | Inst. mIoU |    aero    | bag | cap | car | chair | earphone | guitar |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|84.4	|86.0|83.0	|83.8	|90.1	|79.8	|90.2	|83.4	|91.8	|
+| Cls. mIoU | Inst. mIoU |    aero    |      bag      |   cap   |    car     |   chair    |    earphone    |  guitar   |
+| :-------: | :--------: | :--------: | :-----------: | :-----: | :--------: | :--------: | :------------: | :-------: |
+|   84.4    |    86.0    |    83.0    |     83.8      |  90.1   |    79.8    |    90.2    |      83.4      |   91.8    |
 | **knife** |  **lamp**  | **laptop** | **motorbike** | **mug** | **pistol** | **rocket** | **skateboard** | **table** |
 |   87.8    |    82.5    |    95.9    |     76.1      |  95.4   |    84.9    |    68.5    |      83.1      |   84.3    |
 
@@ -104,22 +106,25 @@ img_root = './data/shapenetcore_partanno_segmentation_benchmark_v0_normal'
 model_root = './checkpoints/your_experiment_root'  # dir to your checkpoints
 target_root = './results/your_result_root'  # dir to save the result
 
-# Visualization
+# Visualization![847_PointCAT_img](G:/PointCAT/partseg/847_PointCAT_img.png)
 python vis.py  # 
 ```
 
-![](G:\PointCAT\README.assets\847_PointCAT_img.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110115460.png)
 
-![](G:\PointCAT\README.assets\208_PointCAT_img.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110116174.png)
 
 ## Semantic Segmentation (S3DIS)
 
 ### Data Preparation
+
 Download 3D indoor parsing dataset (**S3DIS**) [here](http://buildingparser.stanford.edu/dataset.html)  and save in `data/s3dis/Stanford3dDataset_v1.2_Aligned_Version/`.
+
 ```
 cd data_utils
 python collect_indoor3d_data.py
 ```
+
 Processed data will save in `data/stanford_indoor3d/`. The data structure be like:
 
 ```
@@ -145,6 +150,7 @@ python train.py --learning_rate 0.001 --optimizer AdamW  --test_area 5
 # Test
 python test_semseg.py --log_dir your_expriment_root --visiual --test_area 5
 ```
+
 ## Visualization
 
 Visualization results will save in `log/sem_seg/your_expriment_root/visual/` and you can transform these .obj files to .txt by these command:
@@ -156,15 +162,15 @@ cd ./seg_segmentation/data
 python input_vis.py
 ```
 
-![](G:\PointCAT\README.assets\Area_5_conferenceRoom_1_pred.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110117645.png)
 
-![](G:\PointCAT\README.assets\Area_5_conferenceRoom_2_pred.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110118793.png)
 
 ### Performance
 
-![image-20230310221344544](G:\PointCAT\README.assets\image-20230310221344544.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110119345.png)
 
-![image-20230310221335118](G:\PointCAT\README.assets\image-20230310221335118.png)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110118376.png)
 
 ## Reference By
 
@@ -172,7 +178,9 @@ python input_vis.py
 
 
 ## Citation
+
 If you find this repo useful in your research, please consider citing it and our other works:
+
 ```
 @article{Pytorch_Pointnet_Pointnet2,
       Author = {Xu Yan},
@@ -181,5 +189,7 @@ If you find this repo useful in your research, please consider citing it and our
       Year = {2019}
 }
 ```
+
 ## Selected Projects using This Codebase
+
 [PCT: Point Cloud Transformer](https://github.com/MenghaoGuo/PCT)
