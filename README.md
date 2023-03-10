@@ -16,7 +16,7 @@ pip install pointnet2_ops_lib/.
 ## Requirement
 
 ```
-![1](G:/PointCAT/images/1.jpg)![1](G:/PointCAT/images/1.png)einops==0.6.0
+einops==0.6.0
 h5py==3.6.0
 matplotlib==3.5.2
 numpy==1.21.5
@@ -24,7 +24,7 @@ open3d==0.15.1
 pandas==1.4.2
 pointnet2_ops==3.0.0
 pyntcloud==0.3.1
-![1](G:/PointCAT/images/1.png)scikit_learn==1.2.2
+scikit_learn==1.2.2
 scipy==1.8.0
 thop==0.1.1.post2209072238
 timm==0.6.7
@@ -33,7 +33,7 @@ tqdm==4.64.0
 
 ##  architecture for Shape Classification
 
-[https://github.com/xincheng-yang/Myimageresource/raw/main/images/202303110114950.jpg](https://github.com/xincheng-yang/Myimageresource/blob/main/images/202303110114950.jpg?raw=true)
+![](images/1.png)
 
 ## Classification (ModelNet40)
 
@@ -104,13 +104,12 @@ img_root = './data/shapenetcore_partanno_segmentation_benchmark_v0_normal'
 model_root = './checkpoints/your_experiment_root'  # dir to your checkpoints
 target_root = './results/your_result_root'  # dir to save the result
 
-# Visualization![847_PointCAT_img](G:/PointCAT/partseg/847_PointCAT_img.png)
+# Visualization
 python vis.py  # 
 ```
+![](images/208_PointCAT_img.png)
 
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110115460.png)
-
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110116174.png)
+![](images/847_PointCAT_img)
 
 ## Semantic Segmentation (S3DIS)
 
@@ -156,15 +155,15 @@ cd ./seg_segmentation/data
 python input_vis.py
 ```
 
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110117645.png)
+![](images/Area_5_conferenceRoom_1_pred.png)
 
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110118793.png)
+![](images/Area_5_conferenceRoom_2_pred.png)
 
 ### Performance
 
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110119345.png)
+![](images/image-20230310221344544.png)
 
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110118376.png)
+![](images/image-20230310221335118.png)
 
 ## Reference By
 
