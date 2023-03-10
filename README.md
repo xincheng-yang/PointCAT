@@ -33,7 +33,7 @@ tqdm==4.64.0
 
 ##  architecture for Shape Classification
 
-![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource@main/images/202303110116545.jpg)
+![](https:/cdn.jsdelivr.net/gh/xincheng-yang/Myimageresource/images/202303110116545.jpg)
 
 ## Classification (ModelNet40)
 
