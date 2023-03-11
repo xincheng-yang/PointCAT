@@ -109,7 +109,7 @@ python vis.py  #
 ```
 ![](images/208_PointCAT_img.png)
 
-![](images/847_PointCAT_img)
+![](images/847_PointCAT_img.png)
 
 ## Semantic Segmentation (S3DIS)
 
