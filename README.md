@@ -33,7 +33,7 @@ tqdm==4.64.0
 
 ##  architecture for Shape Classification
 
-![](images/1.png)
+![](https://github.com/xincheng-yang/PointCAT/tree/main/images/1.png)
 
 ## Classification (ModelNet40)
 
@@ -107,9 +107,9 @@ target_root = './results/your_result_root'  # dir to save the result
 # Visualization
 python vis.py  # 
 ```
-![](images/208_PointCAT_img.png)
+![](https://github.com/xincheng-yang/PointCAT/tree/main/images/208_PointCAT_img.png)
 
-![](images/847_PointCAT_img.png)
+![](https://github.com/xincheng-yang/PointCAT/tree/main/images/847_PointCAT_img.png)
 
 ## Semantic Segmentation (S3DIS)
 
@@ -161,9 +161,9 @@ python input_vis.py
 
 ### Performance
 
-![](images/image-20230310221344544.png)
+![](https://github.com/xincheng-yang/PointCAT/tree/main/images/image-20230310221344544.png)
 
-![](images/image-20230310221335118.png)
+![](https://github.com/xincheng-yang/PointCAT/tree/main/images/image-20230310221335118.png)
 
 ## Reference By
 
