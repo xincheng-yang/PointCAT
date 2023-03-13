@@ -14,7 +14,6 @@ pip install pointnet2_ops_lib/.
 ```
 
 ## Requirement
-
 ```
 einops==0.6.0
 h5py==3.6.0
@@ -30,7 +29,6 @@ thop==0.1.1.post2209072238
 timm==0.6.7
 tqdm==4.64.0
 ```
-
 ##  architecture for Shape Classification
 
 ![](/images/1.png)
