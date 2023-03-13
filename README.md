@@ -113,7 +113,7 @@ python vis.py  #
 
 ## Semantic Segmentation (S3DIS)
 
-### Data Preparation
+## Data Preparation
 Download 3D indoor parsing dataset (**S3DIS**) [here](http://buildingparser.stanford.edu/dataset.html)  and save in `data/s3dis/Stanford3dDataset_v1.2_Aligned_Version/`.
 ```
 cd data_utils
@@ -132,7 +132,7 @@ Processed data will save in `data/stanford_indoor3d/`. The data structure be lik
 		  ...............
 ```
 
-### Run
+## Run
 
 ```shell
 # Semantic Segmentation on S3DIS
@@ -159,7 +159,7 @@ python input_vis.py
 
 ![](/images/Area_5_conferenceRoom_2_pred.png)
 
-### Performance
+## Performance
 
 ![](/images/image-20230310221344544.png)
 
