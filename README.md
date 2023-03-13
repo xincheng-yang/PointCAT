@@ -169,7 +169,6 @@ python input_vis.py
 
 [charlesq34/PointNet++](https://github.com/charlesq34/pointnet2)
 
-
 ## Citation
 If you find this repo useful in your research, please consider citing it and our other works:
 ```
