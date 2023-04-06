@@ -31,7 +31,7 @@ tqdm==4.64.0
 ```
 ##  architecture for Shape Classification
 
-![images](/images/1.png)
+![](./images/1.png)
 
 ## Classification (ModelNet40)
 
@@ -105,9 +105,9 @@ target_root = './results/your_result_root'  # dir to save the result
 # Visualization
 python vis.py  # 
 ```
-![images](/images/208_PointCAT_img.png)
+![](./images/208_PointCAT_img.png)
 
-![images](/images/847_PointCAT_img.png)
+![](./images/847_PointCAT_img.png)
 
 ## Semantic Segmentation (S3DIS)
 
@@ -153,15 +153,15 @@ cd ./seg_segmentation/data
 python input_vis.py
 ```
 
-![images](/images/Area_5_conferenceRoom_1_pred.png)
+![](./images/Area_5_conferenceRoom_1_pred.png)
 
-![images](/images/Area_5_conferenceRoom_2_pred.png)
+![](./images/Area_5_conferenceRoom_2_pred.png)
 
 ## Performance
 
-![images](/images/image-20230310221344544.png)
+![](./images/image-20230310221344544.png)
 
-![images](/images/image-20230310221335118.png)
+![](./images/image-20230310221335118.png)
 
 ## Reference By
 
