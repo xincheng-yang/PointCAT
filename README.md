@@ -179,6 +179,24 @@ If you find this repo useful in your research, please consider citing it and our
       Journal = {https://github.com/yanx27/Pointnet_Pointnet2_pytorch},
       Year = {2019}
 }
+
+@misc{guo2020pct,
+      title={PCT: Point Cloud Transformer}, 
+      author={Meng-Hao Guo and Jun-Xiong Cai and Zheng-Ning Liu and Tai-Jiang Mu and Ralph R. Martin and Shi-Min Hu},
+      year={2020},
+      eprint={2012.09688},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{yang2023pointcat,
+      title={PointCAT: Cross-Attention Transformer for point cloud}, 
+      author={Xincheng Yang and Mingze Jin and Weiji He and Qian Chen},
+      year={2023},
+      eprint={2304.03012},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 ## Selected Projects using This Codebase
 [PCT: Point Cloud Transformer](https://github.com/MenghaoGuo/PCT)
