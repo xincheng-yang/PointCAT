@@ -1,7 +1,7 @@
 # Pytorch Implementation of PointCAT
 This is the original PyTorch implementation of PointCAT: Cross-Attention Transformer for point cloud.
 
-Paper link: https://arxiv.org/pdf/2012.09688.pdf.
+Paper link: https://arxiv.org/pdf/2304.03012.pdf.
 
 ## Install
 
